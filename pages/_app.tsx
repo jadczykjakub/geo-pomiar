@@ -14,7 +14,6 @@ import Footer from 'components/Footer';
 import { GlobalStyle } from 'components/GlobalStyles';
 import Navbar from 'components/Navbar';
 import NavigationDrawer from 'components/NavigationDrawer';
-import NewsletterModal from 'components/NewsletterModal';
 import WaveCta from 'components/WaveCta';
 import { NewsletterModalContextProvider, useNewsletterModalContext } from 'contexts/newsletter-modal.context';
 import { NavItems } from 'types';
@@ -24,8 +23,6 @@ const navItems: NavItems = [
   { title: 'Usługi', href: '/uslugi' },
   { title: 'Kontakt', href: '/kontakt' },
 ];
-
-// const TinaCMS = dynamic(() => import('tinacms'), { ssr: false });
 
 function MyApp({ Component, pageProps }: AppProps) {
   return (
@@ -51,23 +48,7 @@ function MyApp({ Component, pageProps }: AppProps) {
         <Modals />
         <Navbar items={navItems} />
         <Component {...pageProps} />
-        {/* <TinaEditProvider
-          editMode={
-            <TinaCMS
-              query={pageProps.query}
-              variables={pageProps.variables}
-              data={pageProps.data}
-              isLocalClient={!process.env.NEXT_PUBLIC_TINA_CLIENT_ID}
-              branch={process.env.NEXT_PUBLIC_EDIT_BRANCH}
-              clientId={process.env.NEXT_PUBLIC_TINA_CLIENT_ID}
-              {...pageProps}
-            >
-              {(livePageProps: any) => <Component {...livePageProps} />}
-            </TinaCMS>
-          }
-        >
-          <Component {...pageProps} />
-        </TinaEditProvider> */}
+
         <WaveCta />
         <Footer />
       </Providers>
@@ -88,7 +69,7 @@ function Modals() {
   if (!isModalOpened) {
     return null;
   }
-  return <NewsletterModal onClose={() => setIsModalOpened(false)} />;
+  return null;
 }
 
 export default MyApp;
