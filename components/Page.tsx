@@ -43,8 +43,8 @@ const HeaderContainer = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
-  background: rgb(var(--secondary));
-  min-height: 40rem;
+  background: rgb(var(--background));
+  min-height: 20rem;
 `;
 
 const Title = styled(SectionTitle)`

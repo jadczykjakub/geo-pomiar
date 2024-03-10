@@ -20,7 +20,7 @@ export default function BasicCard({ title, description, imageUrl }: BasicCardPro
 const Card = styled.div`
   display: flex;
   padding: 2.5rem;
-  background: rgb(var(--cardBackground));
+  background: rgb(var(--primary));
   box-shadow: var(--shadow-md);
   flex-direction: column;
   justify-content: center;

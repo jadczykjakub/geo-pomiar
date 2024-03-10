@@ -28,19 +28,20 @@ export const GlobalStyle = createGlobalStyle`
 }
 
 .next-dark-theme {
-  --background: 26,32,44;
-  --secondBackground: 45,55,72;
+  --background: 50,48,49;
+  --secondBackground: 50,48,49;
   --text: 237,237,238;
   --textSecondary: 255,255,255;
-  --primary: 22,115,255; 
-  --secondary: 10,18,30;
+  --primary: 5,112,77; 
+  --secondary: 5,112,77;
   --tertiary: 231,241,251;
   --cardBackground: 45,55,72;
   --inputBackground: 45,55,72;
-  --navbarBackground: 45,55,72;
+  --navbarBackground: 5,112,77;
   --modalBackground: 26,32,44;
   --errorColor: 207,34,46;
   --logoColor: #fff;
+  --ornament: 238, 169, 29;
 }
 
 :root {

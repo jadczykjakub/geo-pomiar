@@ -21,13 +21,10 @@ export default function Hero() {
           repudiandae perspiciatis nostrum praesentium, unde pariatur tempora magni rem. Necessitatibus facilis obcaecati ratione.
         </Description>
         <CustomButtonGroup>
-          <Button onClick={() => setIsModalOpened(true)}>
-            Subscribe to the newsletter <span>&rarr;</span>
-          </Button>
-          <NextLink href="#whitepaper" passHref>
-            <Button transparent>
-              Features <span>&rarr;</span>
-            </Button>
+          <NextLink href="/uslugi" passHref>
+            <OutlinedButton>
+              Usługi <span>&rarr;</span>
+            </OutlinedButton>
           </NextLink>
         </CustomButtonGroup>
       </Contents>
@@ -37,6 +34,10 @@ export default function Hero() {
     </HeroWrapper>
   );
 }
+
+const OutlinedButton = styled(Button)`
+  color: rgb(var(--textSecondary));
+`;
 
 const HeroWrapper = styled(Container)`
   display: flex;

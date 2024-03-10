@@ -20,13 +20,12 @@ import { NewsletterModalContextProvider, useNewsletterModalContext } from 'conte
 import { NavItems } from 'types';
 
 const navItems: NavItems = [
-  { title: 'Awesome SaaS Features', href: '/features' },
-  { title: 'Pricing', href: '/pricing' },
-  { title: 'Contact', href: '/contact' },
-  { title: 'Sign up', href: '/sign-up', outlined: true },
+  // { title: 'Awesome SaaS Features', href: '/features' },
+  { title: 'Usługi', href: '/uslugi' },
+  { title: 'Kontakt', href: '/kontakt' },
 ];
 
-const TinaCMS = dynamic(() => import('tinacms'), { ssr: false });
+// const TinaCMS = dynamic(() => import('tinacms'), { ssr: false });
 
 function MyApp({ Component, pageProps }: AppProps) {
   return (
@@ -51,7 +50,8 @@ function MyApp({ Component, pageProps }: AppProps) {
       <Providers>
         <Modals />
         <Navbar items={navItems} />
-        <TinaEditProvider
+        <Component {...pageProps} />
+        {/* <TinaEditProvider
           editMode={
             <TinaCMS
               query={pageProps.query}
@@ -67,7 +67,7 @@ function MyApp({ Component, pageProps }: AppProps) {
           }
         >
           <Component {...pageProps} />
-        </TinaEditProvider>
+        </TinaEditProvider> */}
         <WaveCta />
         <Footer />
       </Providers>

@@ -19,13 +19,13 @@ const Anchor = styled.a`
   width: fit-content;
   text-decoration: none;
 
-  background: linear-gradient(rgb(var(--primary)), rgb(var(--primary)));
+  background: linear-gradient(rgb(var(--ornament)), rgb(var(--ornament)));
   background-position: 0% 100%;
   background-repeat: no-repeat;
   background-size: 100% 0px;
   transition: 100ms;
   transition-property: background-size, text-decoration, color;
-  color: rgb(var(--primary));
+  color: rgb(var(--ornament));
 
   &:hover {
     background-size: 100% 100%;
