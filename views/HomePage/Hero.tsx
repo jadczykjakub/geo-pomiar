@@ -14,16 +14,16 @@ export default function Hero() {
   return (
     <HeroWrapper>
       <Contents>
-        <CustomOverTitle>the coolest, saas product you have ever seen</CustomOverTitle>
-        <Heading>Make your life easier with our SaaS</Heading>
+        <CustomOverTitle>Zaangażowanie, precyzja, zaufanie </CustomOverTitle>
+        <Heading>Geo-Pomiar Walasek</Heading>
         <Description>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis, tempora qui. Explicabo voluptate iure ipsum molestias
-          repudiandae perspiciatis nostrum praesentium, unde pariatur tempora magni rem. Necessitatibus facilis obcaecati ratione.
+          Kompleksowe usługi geodezyjnokartograficzne dla klientów indywidualnych, organów administracji publicznej oraz firm z branży
+          projektowej, budowlanej i instalacyjnej.
         </Description>
         <CustomButtonGroup>
-          <NextLink href="/uslugi" passHref>
+          <NextLink href="/oferta" passHref>
             <OutlinedButton>
-              Usługi <span>&rarr;</span>
+              Zobacz naszą oferte <span>&rarr;</span>
             </OutlinedButton>
           </NextLink>
         </CustomButtonGroup>
@@ -42,7 +42,7 @@ const OutlinedButton = styled(Button)`
 const HeroWrapper = styled(Container)`
   display: flex;
   padding-top: 5rem;
-
+  padding-bottom: 4rem;
   ${media('<=desktop')} {
     padding-top: 1rem;
     flex-direction: column;

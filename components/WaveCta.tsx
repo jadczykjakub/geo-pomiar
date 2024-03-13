@@ -6,10 +6,14 @@ import Container from 'components/Container';
 import SectionTitle from 'components/SectionTitle';
 import { useNewsletterModalContext } from 'contexts/newsletter-modal.context';
 import { media } from 'utils/media';
+import OverTitle from './OverTitle';
+import { useRouter } from 'next/router';
 
 export default function WaveCta() {
   const { setIsModalOpened } = useNewsletterModalContext();
+  const router = useRouter();
 
+  console.log(router.pathname);
   return (
     <>
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320" preserveAspectRatio="none">
@@ -21,19 +25,43 @@ export default function WaveCta() {
       </svg>
       <CtaWrapper>
         <Container>
-          <Title>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Temporibus delectus?</Title>
-          <CustomButtonGroup>
-            <NextLink href="/kontakt" passHref>
-              <OutlinedButton>
-                Kontakt <span>&rarr;</span>
-              </OutlinedButton>
-            </NextLink>
-          </CustomButtonGroup>
+          {router.pathname === '/kontakt' && (
+            <>
+              <CustomOverTitle>Nie jesteś pewny? </CustomOverTitle>
+              <Title>Sprawdź naszą oferte</Title>
+              <CustomButtonGroup>
+                <NextLink href="/oferta" passHref>
+                  <OutlinedButton>
+                    Oferta <span>&rarr;</span>
+                  </OutlinedButton>
+                </NextLink>
+              </CustomButtonGroup>
+            </>
+          )}
+
+          {router.pathname !== '/kontakt' && (
+            <>
+              <CustomOverTitle>Nie jesteś pewny? </CustomOverTitle>
+              <Title>Zapraszamy do kontaktu</Title>
+              <CustomButtonGroup>
+                <NextLink href="/kontakt" passHref>
+                  <OutlinedButton>
+                    Kontakt <span>&rarr;</span>
+                  </OutlinedButton>
+                </NextLink>
+              </CustomButtonGroup>
+            </>
+          )}
         </Container>
       </CtaWrapper>
     </>
   );
 }
+
+const CustomOverTitle = styled(OverTitle)`
+  margin-bottom: 2rem;
+  text-align: center;
+`;
 
 const CtaWrapper = styled.div`
   background: rgb(var(--secondary));

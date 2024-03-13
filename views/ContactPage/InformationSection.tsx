@@ -1,9 +1,15 @@
 import styled from 'styled-components';
+import { PropsWithChildren } from 'react';
 
-export default function InformationSection() {
+export interface PageProps {
+  title: string;
+  description?: string;
+}
+
+export default function InformationSection({ title, description, children }: PropsWithChildren<PageProps>) {
   return (
     <Wrapper>
-      <h3>Contact Info</h3>
+      <h3>{title}</h3>
       <p>
         <span>Email:</span> support@myawesomesaas.com
       </p>
@@ -15,6 +21,7 @@ const Wrapper = styled.div`
   flex: 1;
   margin-right: 3rem;
   margin-bottom: 3rem;
+  text-align: center;
 
   h3 {
     font-size: 2.5rem;

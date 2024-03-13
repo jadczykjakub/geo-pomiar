@@ -8,8 +8,6 @@ import dynamic from 'next/dynamic';
 import Head from 'next/head';
 import { ColorModeScript } from 'nextjs-color-mode';
 import React, { PropsWithChildren } from 'react';
-import { TinaEditProvider } from 'tinacms/dist/edit-state';
-
 import Footer from 'components/Footer';
 import { GlobalStyle } from 'components/GlobalStyles';
 import Navbar from 'components/Navbar';
@@ -20,7 +18,7 @@ import { NavItems } from 'types';
 
 const navItems: NavItems = [
   // { title: 'Awesome SaaS Features', href: '/features' },
-  { title: 'Usługi', href: '/uslugi' },
+  { title: 'Oferta', href: '/oferta' },
   { title: 'Kontakt', href: '/kontakt' },
 ];
 

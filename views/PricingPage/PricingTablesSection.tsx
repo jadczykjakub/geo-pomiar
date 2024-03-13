@@ -4,7 +4,7 @@ import AutofitGrid from 'components/AutofitGrid';
 import PricingCard from 'components/PricingCard';
 import SectionTitle from 'components/SectionTitle';
 
-export default function PricingTablesSection() {
+export default function  PricingTablesSection() {
   return (
     <Wrapper>
       <SectionTitle>Flexible pricing for agile teams</SectionTitle>

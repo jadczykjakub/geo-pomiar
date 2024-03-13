@@ -12,6 +12,7 @@ import Hero from 'views/HomePage/Hero';
 import Partners from 'views/HomePage/Partners';
 import ScrollableBlogPosts from 'views/HomePage/ScrollableBlogPosts';
 import Testimonials from 'views/HomePage/Testimonials';
+import FaqSection from 'views/PricingPage/FaqSection';
 
 export default function Homepage({ posts }: InferGetStaticPropsType<typeof getStaticProps>) {
   return (
@@ -27,7 +28,7 @@ export default function Homepage({ posts }: InferGetStaticPropsType<typeof getSt
         <WhiteBackgroundContainer>
           <Hero />
           {/* <Partners /> */}
-          <BasicSection imageUrl="/demo-illustration-1.svg" title="Lorem ipsum dolor sit amet consectetur." overTitle="sit amet gogo">
+          {/* <BasicSection imageUrl="/demo-illustration-1.svg" title="Tereny, na których Działamy" overTitle="Zakres Pracy Geodezyjnej">
             <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas, quidem error incidunt a doloremque voluptatem porro inventore
               voluptate quo deleniti animi laboriosam.{' '}
@@ -35,33 +36,58 @@ export default function Homepage({ posts }: InferGetStaticPropsType<typeof getSt
               consectetur adipisicing elit. Soluta repellendus quia quos obcaecati nihil. Laudantium non accusantium, voluptate eum nesciunt
               at suscipit quis est soluta?
             </p>
+          </BasicSection> */}
+
+          <BasicSection imageUrl="/demo-illustration-1.svg" title="Powiaty, na których działamy" overTitle="Zakres Pracy Geodezyjnej">
+            <p>Zasięg naszych prac obejmuje powiaty:</p>
+            <ul>
+              <li>Włoszczowski</li>
+              <li>Jędrzejowski</li>
+              <li>Kielecki</li>
+              <li>Częstochowski</li>
+              <li>Zawierciański</li>
+              <li>Myszkowski</li>
+              <li>Miechowski</li>
+              <li>Olkuski</li>
+              <li>Radomszczański</li>
+            </ul>
+            
           </BasicSection>
-          <BasicSection imageUrl="/demo-illustration-2.svg" title="Lorem ipsum dolor sit." overTitle="lorem ipsum" reversed>
+          <BasicSection imageUrl="/demo-illustration-1.svg" title="mgr inż. Tomasz Walasek" overTitle="Geodeta uprawniony" reversed>
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas, quidem error incidunt a doloremque voluptatem porro inventore{' '}
-              <strong>voluptate quo deleniti animi laboriosam</strong>. Possimus ullam velit rem itaque consectetur, in distinctio?
+              Przedsiębiorstwem kieruje geodeta uprawniony mgr inż. Tomasz Walasek, absolwent Akademii Górniczo Hutniczej w Krakowie oraz
+              Politechniki Świętokrzyskiej. Doświadczenie zdobywał w największych firmach geodezyjnych w kraju i udokumentował je zdobywając
+              uprawnienia geodezyjne z zakresu 1 oraz 2
+              <ul>
+                <li>„Geodezyjne pomiary sytuacyjno-wysokościowe, realizacyjne i inwentaryzacyjne”</li>
+                <li>„Rozgraniczanie i podziały nieruchomości (gruntów) oraz sporządzanie dokumentacji do celów prawnych”</li>
+              </ul>
+              Posiada również wiedzę z zakresu obsługi baz danych, potwierdzoną ukończeniem studiów podyplomowych na AGH w Krakowie.
+            </p>
+          </BasicSection>
+          <BasicSection
+            imageUrl="/demo-illustration-2.svg"
+            title="Firma, której możesz zaufać "
+            overTitle="Zaangażowanie, precyzja, zaufanie"
+          >
+            <p>
+              Nasze projekty wykonujemy z pełnym zaangażowaniem, zwracając szczególną uwagę na indywidualne potrzeby klientów{' '}
+              <strong>Oferujemy atrakcyjne ceny i szybką realizację zleceń.</strong>. <p>Zapewniamy: </p>
             </p>
             <ul>
-              <li>Professional point 1</li>
-              <li>Professional remark 2</li>
-              <li>Professional feature 3</li>
+              <li>Bezpłatną wycene</li>
+              <li>Dojazd do klienta</li>
+              <li>Doradztwo techniczne</li>
             </ul>
           </BasicSection>
-          <BasicSection imageUrl="/demo-illustration-1.svg" title="Lorem ipsum dolor sit amet consectetur." overTitle="sit amet gogo">
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas, quidem error incidunt a doloremque voluptatem porro inventore
-              voluptate quo deleniti animi laboriosam.{' '}
-              <Link href="/help-center">Possimus ullam velit rem itaque consectetur, in distinctio?</Link> Lorem ipsum, dolor sit amet
-              consectetur adipisicing elit. Soluta repellendus quia quos obcaecati nihil. Laudantium non accusantium, voluptate eum nesciunt
-              at suscipit quis est soluta?
-            </p>
-          </BasicSection>
         </WhiteBackgroundContainer>
+
         <DarkerBackgroundContainer>
           <Cta />
-          <FeaturesGallery />
+
+          {/* <FeaturesGallery /> */}
           {/* <Features /> */}
-          {/* <Testimonials /> */}
+          <Testimonials />
           {/* <ScrollableBlogPosts posts={posts} /> */}
         </DarkerBackgroundContainer>
       </HomepageWrapper>

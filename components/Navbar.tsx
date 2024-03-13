@@ -1,3 +1,4 @@
+import NextImage from 'next/image';
 import dynamic from 'next/dynamic';
 import NextLink from 'next/link';
 import { useRouter } from 'next/router';
@@ -69,9 +70,10 @@ export default function Navbar({ items }: NavbarProps) {
       <Content>
         <NextLink href="/" passHref>
           <LogoWrapper>
-            <Logo />
+            <NextImage src={'/logo/logo2.png'} alt={'title'} width={120} height={68} objectFit="contain" />
           </LogoWrapper>
         </NextLink>
+
         <NavItemList>
           {items.map((singleItem) => (
             <NavItem key={singleItem.href} {...singleItem} />
