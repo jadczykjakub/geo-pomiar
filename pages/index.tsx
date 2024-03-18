@@ -13,7 +13,7 @@ import Partners from 'views/HomePage/Partners';
 import ScrollableBlogPosts from 'views/HomePage/ScrollableBlogPosts';
 import Testimonials from 'views/HomePage/Testimonials';
 import FaqSection from 'views/PricingPage/FaqSection';
-import CustomBoldText from 'components/customBoldText';
+import CustomBoldText from 'components/CustomBoldText';
 
 export default function Homepage({ posts }: InferGetStaticPropsType<typeof getStaticProps>) {
   return (
