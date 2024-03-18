@@ -1,37 +1,39 @@
 import styled from 'styled-components';
+import NextImage from 'next/image';
 import Page from 'components/Page';
 import { media } from 'utils/media';
-import InformationSection from 'views/ContactPage/InformationSection';
 import OverTitle from 'components/OverTitle';
+import Link from 'components/Link';
 
 export default function ContactPage() {
   return (
     <Page title="Kontakt" description="">
       <ContactContainer>
         <Wrapper>
+          <NextImage src={'/svg/email.svg'} width={40} height={40} alt={'email icon'} />
           <h3>Email</h3>
-          <p>
-            <span>Email:</span> support@myawesomesaas.com
-          </p>
+          <Link href="mailto:tomek@wp.pl">tomek@wp.pl</Link>
         </Wrapper>
         <Wrapper>
+          <NextImage src={'/svg/phone.svg'} width={40} height={40} alt={'phone icon'} />
+
           <h3>Telefon</h3>
-          <p>
-            <span>Email:</span> support@myawesomesaas.com
-          </p>
+          <Link href="tel:721721721">721 721 721</Link>
         </Wrapper>
         <Wrapper>
+          <NextImage src={'/svg/address.svg'} width={40} height={40} alt={'address icon'} />
+
           <h3>Adres</h3>
-          <p>
-            <span>Adres:</span> Dąbie 4, 29-145 Secemin
-          </p>
+          <Link href="https://maps.app.goo.gl/H7N214i8qyTzXLAV8" target="_blank">
+            Dąbie 4, 29-145 Secemin
+          </Link>
         </Wrapper>
       </ContactContainer>
       <PersonContainer>
         <Wrapper>
           <OverTitle>Geodeta Uprawniony</OverTitle>
           <h3>mgr inż. Tomasz Walasek</h3>
-          <div>Tutaj zdjęcie</div>
+          <NextImage src="/images/tomunia.png" width={321} height={231} alt="tomunia" objectFit="contain" />
         </Wrapper>
       </PersonContainer>
       <ContactContainer>
@@ -57,10 +59,9 @@ const Wrapper = styled.div`
     margin-bottom: 2rem;
   }
 
+  a,
   p {
-    font-weight: normal;
     font-size: 1.6rem;
-    color: rgba(var(--text), 0.7);
   }
 
   span {
@@ -72,6 +73,7 @@ const Wrapper = styled.div`
 
 const PersonContainer = styled.div`
   display: flex;
+  margin-top: 8rem;
 
   ${media('<=tablet')} {
     flex-direction: column;

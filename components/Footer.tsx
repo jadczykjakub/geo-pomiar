@@ -55,9 +55,7 @@ export default function Footer() {
             <FooterList key={singleItem.title} {...singleItem} />
           ))}
         </ListContainer> */}
-        <BottomBar>
-          <Copyright>&copy; Copyright 2021 My Saas Startup</Copyright>
-        </BottomBar>
+        {/* <BottomBar></BottomBar> */}
       </Container>
     </FooterWrapper>
   );

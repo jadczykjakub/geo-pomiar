@@ -13,6 +13,7 @@ import Partners from 'views/HomePage/Partners';
 import ScrollableBlogPosts from 'views/HomePage/ScrollableBlogPosts';
 import Testimonials from 'views/HomePage/Testimonials';
 import FaqSection from 'views/PricingPage/FaqSection';
+import CustomBoldText from 'components/customBoldText';
 
 export default function Homepage({ posts }: InferGetStaticPropsType<typeof getStaticProps>) {
   return (
@@ -38,7 +39,7 @@ export default function Homepage({ posts }: InferGetStaticPropsType<typeof getSt
             </p>
           </BasicSection> */}
 
-          <BasicSection imageUrl="/demo-illustration-1.svg" title="Powiaty, na których działamy" overTitle="Zakres Pracy Geodezyjnej">
+          <BasicSection imageUrl="/images/road.png" title="Powiaty, na których działamy" overTitle="Zakres Pracy Geodezyjnej">
             <p>Zasięg naszych prac obejmuje powiaty:</p>
             <ul>
               <li>Włoszczowski</li>
@@ -51,29 +52,27 @@ export default function Homepage({ posts }: InferGetStaticPropsType<typeof getSt
               <li>Olkuski</li>
               <li>Radomszczański</li>
             </ul>
-            
           </BasicSection>
-          <BasicSection imageUrl="/demo-illustration-1.svg" title="mgr inż. Tomasz Walasek" overTitle="Geodeta uprawniony" reversed>
-            <p>
-              Przedsiębiorstwem kieruje geodeta uprawniony mgr inż. Tomasz Walasek, absolwent Akademii Górniczo Hutniczej w Krakowie oraz
-              Politechniki Świętokrzyskiej. Doświadczenie zdobywał w największych firmach geodezyjnych w kraju i udokumentował je zdobywając
-              uprawnienia geodezyjne z zakresu 1 oraz 2
+          <BasicSection imageUrl="/images/tomunia.png" title="mgr inż. Tomasz Walasek" overTitle="Geodeta uprawniony" reversed>
+            <div>
+              Przedsiębiorstwem kieruje geodeta uprawniony{' '}
+              <CustomBoldText>
+                mgr inż. Tomasz Walasek, absolwent Akademii Górniczo Hutniczej w Krakowie oraz Politechniki Świętokrzyskiej
+              </CustomBoldText>
+              . Doświadczenie zdobywał w największych firmach geodezyjnych w kraju i udokumentował je zdobywając uprawnienia geodezyjne z
+              zakresu 1 oraz 2
               <ul>
                 <li>„Geodezyjne pomiary sytuacyjno-wysokościowe, realizacyjne i inwentaryzacyjne”</li>
                 <li>„Rozgraniczanie i podziały nieruchomości (gruntów) oraz sporządzanie dokumentacji do celów prawnych”</li>
               </ul>
               Posiada również wiedzę z zakresu obsługi baz danych, potwierdzoną ukończeniem studiów podyplomowych na AGH w Krakowie.
-            </p>
+            </div>
           </BasicSection>
-          <BasicSection
-            imageUrl="/demo-illustration-2.svg"
-            title="Firma, której możesz zaufać "
-            overTitle="Zaangażowanie, precyzja, zaufanie"
-          >
-            <p>
+          <BasicSection imageUrl="/images/shake.png" title="Firma, której możesz zaufać " overTitle="Zaangażowanie, precyzja, zaufanie">
+            <div>
               Nasze projekty wykonujemy z pełnym zaangażowaniem, zwracając szczególną uwagę na indywidualne potrzeby klientów{' '}
-              <strong>Oferujemy atrakcyjne ceny i szybką realizację zleceń.</strong>. <p>Zapewniamy: </p>
-            </p>
+              <CustomBoldText>Oferujemy atrakcyjne ceny i szybką realizację zleceń.</CustomBoldText> <p>Zapewniamy: </p>
+            </div>
             <ul>
               <li>Bezpłatną wycene</li>
               <li>Dojazd do klienta</li>

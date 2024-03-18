@@ -1,20 +1,11 @@
-import NextLink from 'next/link';
 import { PropsWithChildren } from 'react';
 import styled from 'styled-components';
 
-export interface LinkProps {
-  href: string;
-  target?: string;
+export default function CustomBoldText({ children }: PropsWithChildren) {
+  return <Anchor>{children}</Anchor>;
 }
 
-export default function Link({ href, target, children }: PropsWithChildren<LinkProps>) {
-  return (
-    <NextLink href={href} passHref>
-      <Anchor target={target}>{children}</Anchor>
-    </NextLink>
-  );
-}
-const Anchor = styled.a`
+const Anchor = styled.span`
   display: inline;
   width: fit-content;
   text-decoration: none;

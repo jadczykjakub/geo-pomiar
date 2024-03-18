@@ -17,7 +17,7 @@ export default function Cta() {
           <SectionTitle>Zapoznaj się z naszą ofertą</SectionTitle>
           <Description>Przejdź na naszą podstrone i zobacz zakres naszych prac</Description>
           <ButtonGroup>
-            <NextLink href="#whitepaper" passHref>
+            <NextLink href="/oferta" passHref>
               <OutlinedButton transparent>
                 Zobacz naszą oferte <span>&rarr;</span>
               </OutlinedButton>

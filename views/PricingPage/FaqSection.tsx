@@ -40,6 +40,7 @@ export default function FaqSection() {
 
 const Wrapper = styled.div`
   margin-top: 15rem;
+  padding: 20px;
   & > *:not(:first-child) {
     margin-top: 3rem;
   }

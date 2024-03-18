@@ -65,6 +65,6 @@ const Description = styled.div`
 `;
 
 const ChildrenWrapper = styled.div`
-  margin-top: 10rem;
+  margin-top: 5rem;
   margin-bottom: 10rem;
 `;

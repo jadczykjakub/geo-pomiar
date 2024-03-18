@@ -17,7 +17,7 @@ export default function BasicSection({ imageUrl, title, overTitle, reversed, chi
   return (
     <BasicSectionWrapper reversed={reversed}>
       <ImageContainer>
-        <NextImage src={imageUrl} alt={title} layout="fill" objectFit="cover" />
+        <NextImage src={imageUrl} alt={title} width={421} height={331} objectFit="contain" />
       </ImageContainer>
       <ContentContainer>
         <CustomOverTitle>{overTitle}</CustomOverTitle>
@@ -46,27 +46,27 @@ const CustomOverTitle = styled(OverTitle)`
 `;
 
 const ImageContainer = styled.div`
-  flex: 1;
+  // flex: 1;
 
-  position: relative;
-  &:before {
-    display: block;
-    content: '';
-    width: 100%;
-    padding-top: calc((9 / 16) * 100%);
-  }
+  // position: relative;
+  // &:before {
+  //   display: block;
+  //   content: '';
+  //   width: 100%;
+  //   padding-top: calc((9 / 16) * 100%);
+  // }
 
-  & > div {
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-  }
+  // & > div {
+  //   position: absolute;
+  //   top: 0;
+  //   right: 0;
+  //   bottom: 0;
+  //   left: 0;
+  // }
 
-  ${media('<=desktop')} {
-    width: 100%;
-  }
+  // ${media('<=desktop')} {
+  //   width: 100%;
+  // }
 `;
 
 const ContentContainer = styled.div`

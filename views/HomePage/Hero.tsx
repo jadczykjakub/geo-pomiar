@@ -1,4 +1,5 @@
 import NextLink from 'next/link';
+import NextImage from 'next/image';
 import styled from 'styled-components';
 import Button from 'components/Button';
 import ButtonGroup from 'components/ButtonGroup';
@@ -29,7 +30,8 @@ export default function Hero() {
         </CustomButtonGroup>
       </Contents>
       <ImageContainer>
-        <HeroIllustration />
+        {/* <HeroIllustration /> */}
+        <NextImage src={'/hero/hero.png'} alt={'title'} width={400} height={400} objectFit="contain" />
       </ImageContainer>
     </HeroWrapper>
   );
@@ -66,7 +68,7 @@ const CustomButtonGroup = styled(ButtonGroup)`
 const ImageContainer = styled.div`
   display: flex;
   flex: 1;
-  justify-content: flex-end;
+  justify-content: center;
   align-items: flex-start;
 
   svg {
