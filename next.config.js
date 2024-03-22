@@ -14,6 +14,7 @@ module.exports = withBundleAnalyzer({
     unoptimized: true,
     loader: 'imgix',
     path: 'https://jadczykjakub.github.io/geo-pomiar/',
+    basePath: "/geo-pomiar"
   },
   // output: 'export',
   basePath: '/geo-pomiar',
