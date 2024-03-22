@@ -8,15 +8,15 @@ module.exports = withBundleAnalyzer({
   reactStrictMode: true,
   pageExtensions: ['js', 'jsx', 'mdx', 'ts', 'tsx'],
   images: {
-    // domains: ['github.blog'],
+    domains: ['github.blog'],
     deviceSizes: [320, 640, 1080, 1200],
     imageSizes: [64, 128],
     unoptimized: true,
     loader: 'imgix',
-    path: 'https://jadczykjakub.github.io/geo-pomiar',
+    path: '/geo-pomiar',
   },
   // output: 'export',
-  // basePath: '/geo-pomiar',
+  basePath: '/geo-pomiar',
   swcMinify: true,
   compiler: {
     styledComponents: true,
