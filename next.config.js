@@ -13,7 +13,7 @@ module.exports = withBundleAnalyzer({
     imageSizes: [64, 128],
     unoptimized: true,
     loader: 'imgix',
-    // path: 'https://jadczykjakub.github.io/geo-pomiar/',
+    path: 'https://jadczykjakub.github.io/geo-pomiar',
   },
   // output: 'export',
   basePath: '/geo-pomiar',
