@@ -52,6 +52,7 @@ export default function Homepage({ posts }: InferGetStaticPropsType<typeof getSt
               <li>Olkuski</li>
               <li>Radomszczański</li>
             </ul>
+            <p>Większe prace wykonujemy na terenie całej Polski</p>
           </BasicSection>
           <BasicSection imageUrl="/geo-pomiar/images/tomunia.png" title="mgr inż. Tomasz Walasek" overTitle="Geodeta uprawniony" reversed>
             <div>
@@ -68,7 +69,11 @@ export default function Homepage({ posts }: InferGetStaticPropsType<typeof getSt
               Posiada również wiedzę z zakresu obsługi baz danych, potwierdzoną ukończeniem studiów podyplomowych na AGH w Krakowie.
             </div>
           </BasicSection>
-          <BasicSection imageUrl="/geo-pomiar/images/shake.png" title="Firma, której możesz zaufać " overTitle="Zaangażowanie, precyzja, zaufanie">
+          <BasicSection
+            imageUrl="/geo-pomiar/images/shake.png"
+            title="Firma, której możesz zaufać "
+            overTitle="Zaangażowanie, precyzja, zaufanie"
+          >
             <div>
               Nasze projekty wykonujemy z pełnym zaangażowaniem, zwracając szczególną uwagę na indywidualne potrzeby klientów{' '}
               <CustomBoldText>Oferujemy atrakcyjne ceny i szybką realizację zleceń.</CustomBoldText> <p>Zapewniamy: </p>
@@ -86,7 +91,7 @@ export default function Homepage({ posts }: InferGetStaticPropsType<typeof getSt
 
           {/* <FeaturesGallery /> */}
           {/* <Features /> */}
-          <Testimonials />
+          {/* <Testimonials /> */}
           {/* <ScrollableBlogPosts posts={posts} /> */}
         </DarkerBackgroundContainer>
       </HomepageWrapper>

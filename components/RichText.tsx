@@ -26,7 +26,7 @@ const RichText = styled.div`
         left: 0;
         top: 0;
         text-align: center;
-        color: rgb(var(--primary));
+        color: rgb(var(--ornament));
         font-family: arial;
         transform: scaleX(-1) rotate(-35deg);
       }

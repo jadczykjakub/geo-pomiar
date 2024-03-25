@@ -15,10 +15,10 @@ export default function Hero() {
   return (
     <HeroWrapper>
       <Contents>
-        <CustomOverTitle>Zaangażowanie, precyzja, zaufanie </CustomOverTitle>
+        <CustomOverTitle>Usługi geodezyjno-kartograficzne</CustomOverTitle>
         <Heading>Geo-Pomiar Walasek</Heading>
         <Description>
-          Kompleksowe usługi geodezyjnokartograficzne dla klientów indywidualnych, organów administracji publicznej oraz firm z branży
+          Kompleksowe usługi geodezyjno-kartograficzne dla klientów indywidualnych, organów administracji publicznej oraz firm z branży
           projektowej, budowlanej i instalacyjnej.
         </Description>
         <CustomButtonGroup>
