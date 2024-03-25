@@ -70,7 +70,7 @@ export default function Navbar({ items }: NavbarProps) {
       <Content>
         <NextLink href="/" passHref>
           <LogoWrapper>
-            <NextImage src={'/logo/logo2.png'} alt={'title'} width={120} height={68} objectFit="contain" />
+            <NextImage src={'/geo-pomiar/logo/logo2.png'} alt={'title'} width={120} height={68} objectFit="contain" />
           </LogoWrapper>
         </NextLink>
 

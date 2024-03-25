@@ -39,7 +39,7 @@ export default function Homepage({ posts }: InferGetStaticPropsType<typeof getSt
             </p>
           </BasicSection> */}
 
-          <BasicSection imageUrl="/images/road.png" title="Powiaty, na których działamy" overTitle="Zakres Pracy Geodezyjnej">
+          <BasicSection imageUrl="/geo-pomiar/images/road.png" title="Powiaty, na których działamy" overTitle="Zakres Pracy Geodezyjnej">
             <p>Zasięg naszych prac obejmuje powiaty:</p>
             <ul>
               <li>Włoszczowski</li>
@@ -53,7 +53,7 @@ export default function Homepage({ posts }: InferGetStaticPropsType<typeof getSt
               <li>Radomszczański</li>
             </ul>
           </BasicSection>
-          <BasicSection imageUrl="/images/tomunia.png" title="mgr inż. Tomasz Walasek" overTitle="Geodeta uprawniony" reversed>
+          <BasicSection imageUrl="/geo-pomiar/images/tomunia.png" title="mgr inż. Tomasz Walasek" overTitle="Geodeta uprawniony" reversed>
             <div>
               Przedsiębiorstwem kieruje geodeta uprawniony{' '}
               <CustomBoldText>
@@ -68,7 +68,7 @@ export default function Homepage({ posts }: InferGetStaticPropsType<typeof getSt
               Posiada również wiedzę z zakresu obsługi baz danych, potwierdzoną ukończeniem studiów podyplomowych na AGH w Krakowie.
             </div>
           </BasicSection>
-          <BasicSection imageUrl="/images/shake.png" title="Firma, której możesz zaufać " overTitle="Zaangażowanie, precyzja, zaufanie">
+          <BasicSection imageUrl="/geo-pomiar/images/shake.png" title="Firma, której możesz zaufać " overTitle="Zaangażowanie, precyzja, zaufanie">
             <div>
               Nasze projekty wykonujemy z pełnym zaangażowaniem, zwracając szczególną uwagę na indywidualne potrzeby klientów{' '}
               <CustomBoldText>Oferujemy atrakcyjne ceny i szybką realizację zleceń.</CustomBoldText> <p>Zapewniamy: </p>
