@@ -72,7 +72,7 @@ export default function Homepage({ posts }: InferGetStaticPropsType<typeof getSt
           <BasicSection
             imageUrl="/geo-pomiar/images/shake.png"
             title="Firma, której możesz zaufać "
-            overTitle="Zaangażowanie, precyzja, zaufanie"
+            overTitle="Zaangażowanie, precyzja, doświadczenie"
           >
             <div>
               Nasze projekty wykonujemy z pełnym zaangażowaniem, zwracając szczególną uwagę na indywidualne potrzeby klientów{' '}
