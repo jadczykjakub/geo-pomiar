@@ -31,7 +31,7 @@ export default function Hero() {
       </Contents>
       <ImageContainer>
         {/* <HeroIllustration /> */}
-        <NextImage src={'/geo-pomiar/hero/hero.png'} alt={'title'} width={400} height={400} objectFit="contain" />
+        <NextImage src={'/hero/hero.png'} alt={'title'} width={400} height={400} objectFit="contain" />
       </ImageContainer>
     </HeroWrapper>
   );

@@ -39,7 +39,7 @@ export default function Homepage({ posts }: InferGetStaticPropsType<typeof getSt
             </p>
           </BasicSection> */}
 
-          <BasicSection imageUrl="/geo-pomiar/images/road.png" title="Powiaty, na których działamy" overTitle="Zakres Pracy Geodezyjnej">
+          <BasicSection imageUrl="/images/road.png" title="Powiaty, na których działamy" overTitle="Zakres Pracy Geodezyjnej">
             <p>Zasięg naszych prac obejmuje powiaty:</p>
             <ul>
               <li>Włoszczowski</li>
@@ -54,7 +54,7 @@ export default function Homepage({ posts }: InferGetStaticPropsType<typeof getSt
             </ul>
             <p>Większe prace wykonujemy na terenie całej Polski</p>
           </BasicSection>
-          <BasicSection imageUrl="/geo-pomiar/images/tomunia.png" title="mgr inż. Tomasz Walasek" overTitle="Geodeta uprawniony" reversed>
+          <BasicSection imageUrl="/images/tomunia.png" title="mgr inż. Tomasz Walasek" overTitle="Geodeta uprawniony" reversed>
             <div>
               Przedsiębiorstwem kieruje geodeta uprawniony{' '}
               <CustomBoldText>
@@ -70,7 +70,7 @@ export default function Homepage({ posts }: InferGetStaticPropsType<typeof getSt
             </div>
           </BasicSection>
           <BasicSection
-            imageUrl="/geo-pomiar/images/shake.png"
+            imageUrl="/images/shake.png"
             title="Firma, której możesz zaufać "
             overTitle="Zaangażowanie, precyzja, doświadczenie"
           >

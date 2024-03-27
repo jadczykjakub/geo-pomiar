@@ -10,7 +10,7 @@ export default function ContactPage() {
     <Page title="Kontakt" description="">
       <ContactContainer>
         <Wrapper>
-          <NextImage src={'/geo-pomiar/svg/email.svg'} width={40} height={40} alt={'email icon'} />
+          <NextImage src={'/svg/email.svg'} width={40} height={40} alt={'email icon'} />
           <h3>Email</h3>
           <Link
             href="mailto:geopomiarwalasek@gmail.com
@@ -20,13 +20,13 @@ export default function ContactPage() {
           </Link>
         </Wrapper>
         <Wrapper>
-          <NextImage src={'/geo-pomiar/svg/phone.svg'} width={40} height={40} alt={'phone icon'} />
+          <NextImage src={'/svg/phone.svg'} width={40} height={40} alt={'phone icon'} />
 
           <h3>Telefon</h3>
           <Link href="tel:790875337">790 875 337</Link>
         </Wrapper>
         <Wrapper>
-          <NextImage src={'/geo-pomiar/svg/address.svg'} width={40} height={40} alt={'address icon'} />
+          <NextImage src={'/svg/address.svg'} width={40} height={40} alt={'address icon'} />
 
           <h3>Adres</h3>
           <Link href="/" target="_blank">
@@ -38,7 +38,7 @@ export default function ContactPage() {
         <Wrapper>
           <OverTitle>Geodeta Uprawniony</OverTitle>
           <h3>mgr inż. Tomasz Walasek</h3>
-          <NextImage src="/geo-pomiar/images/tomunia.png" width={321} height={231} alt="tomunia" objectFit="contain" />
+          <NextImage src="/images/tomunia.png" width={321} height={231} alt="tomunia" objectFit="contain" />
         </Wrapper>
       </PersonContainer>
       <ContactContainer>
