@@ -16,7 +16,7 @@ module.exports = withBundleAnalyzer({
     path: '/',
   },
   // output: 'export',
-  basePath: '/geo-pomiar',
+  // basePath: '/geo-pomiar',
   swcMinify: true,
   compiler: {
     styledComponents: true,
