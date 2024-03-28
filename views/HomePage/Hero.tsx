@@ -24,7 +24,7 @@ export default function Hero() {
         <CustomButtonGroup>
           <NextLink href="/oferta" passHref>
             <OutlinedButton>
-              Zobacz naszą oferte <span>&rarr;</span>
+              Zobacz naszą ofertę <span>&rarr;</span>
             </OutlinedButton>
           </NextLink>
         </CustomButtonGroup>
