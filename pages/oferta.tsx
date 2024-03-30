@@ -6,7 +6,7 @@ import Features from 'views/HomePage/Features';
 
 export default function PricingPage() {
   return (
-    <Page title="Nasza ofera" description="Zapoznaj się z naszą ofertą">
+    <Page title="Nasza oferta" description="Zapoznaj się z naszą ofertą">
       <Wrapper>
         <Features />
         <FaqSection />

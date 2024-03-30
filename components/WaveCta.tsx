@@ -28,7 +28,7 @@ export default function WaveCta() {
           {router.pathname === '/kontakt' && (
             <>
               <CustomOverTitle>Nie jesteś pewny? </CustomOverTitle>
-              <Title>Sprawdź naszą oferte</Title>
+              <Title>Sprawdź naszą ofertę</Title>
               <CustomButtonGroup>
                 <NextLink href="/oferta" passHref>
                   <OutlinedButton>

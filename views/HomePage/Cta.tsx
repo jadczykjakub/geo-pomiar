@@ -19,7 +19,7 @@ export default function Cta() {
           <ButtonGroup>
             <NextLink href="/oferta" passHref>
               <OutlinedButton transparent>
-                Zobacz naszą oferte <span>&rarr;</span>
+                Zobacz naszą ofertę <span>&rarr;</span>
               </OutlinedButton>
             </NextLink>
           </ButtonGroup>
