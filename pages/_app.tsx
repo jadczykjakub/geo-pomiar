@@ -15,6 +15,7 @@ import NavigationDrawer from 'components/NavigationDrawer';
 import WaveCta from 'components/WaveCta';
 import { NewsletterModalContextProvider, useNewsletterModalContext } from 'contexts/newsletter-modal.context';
 import { NavItems } from 'types';
+import { EnvVars } from 'env';
 
 const navItems: NavItems = [
   // { title: 'Awesome SaaS Features', href: '/features' },
@@ -23,12 +24,21 @@ const navItems: NavItems = [
 ];
 
 function MyApp({ Component, pageProps }: AppProps) {
+  const currentUrl = EnvVars.URL;
+  const ogImageUrl = EnvVars.OG_IMAGES_URL;
+  const siteName = EnvVars.SITE_NAME;
+
   return (
     <>
       <Head>
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="" />
         <link rel="icon" type="image/png" href="/favicon.ico" />
+        <meta property="og:title" content={siteName} />
+        <meta property="og:site_name" content={siteName} />
+        <meta property="og:type" content="article" />
+        <meta property="og:url" content={currentUrl} />
+        <meta property="og:image" content={ogImageUrl} />
         {/* <link rel="alternate" type="application/rss+xml" href={EnvVars.URL + 'rss'} title="RSS 2.0" /> */}
         {/* <script
           dangerouslySetInnerHTML={{
